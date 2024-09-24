@@ -21,9 +21,11 @@ public class QuadraticClass {
         if (discriminant > 0.0) {
             double root1 = (-b + Math.pow(discriminant, 0.5)) / (2.0 * a);
             double root2 = (b + Math.pow(discriminant, 0.5)) / (2.0 * a);
+            System.out.println("The roots are: " + root1 + " and " + root2);
         }
         else if (discriminant == 0) {
             double root = -b / (2.0 * a);
+            System.out.println("The root is: " + root);
         }
         else {
             System.out.println("The equation has no real roots");
